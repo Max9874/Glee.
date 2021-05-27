@@ -10,6 +10,7 @@
 
 .header {
     margin-top: 50px;
+    margin-bottom: 50px;
     &__inner {
         display: flex;
         justify-content: space-around;
@@ -50,6 +51,41 @@
 
 .user__nav {
     display: flex;
+}
+
+.user__nav__link {
+    &__search {
+        padding: 19px;
+        border-radius: 50%;
+        background-color: #edf1f4;
+        margin-right: 20px;
+    }
+    &__heart {
+        padding: 19px 40px;
+        padding-bottom: 20px;
+        border-radius: 50px 0 0 50px;
+        background-color: #fcd7b6;
+        position: relative;
+    }
+    &__cart {
+        padding: 19px 40px;
+        border-radius: 0 50px 50px 0;
+        background-color: #fcd7b6;
+        margin-right: 20px;
+        position: relative;
+    }
+    &__cart::before {
+        content: "";
+        background-image: url('../images/icons/palka.svg');
+        position: absolute;
+        top: 0;
+        left: 100px;
+    }
+    &__menu {
+        padding: 16px;
+        border-radius: 50%;
+        background-color: #a3bbc8;
+    }
 }
 
 @import 'media';
