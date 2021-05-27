@@ -1,0 +1,55 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'global';
+.container {
+    max-width: 1800px;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+.header {
+    margin-top: 50px;
+    &__inner {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    &__logo {
+        display: flex;
+        align-items: center;
+        &__main {
+            width: 53px;
+            height: 39px;
+        }
+        &__title {
+            color: $main-color;
+            font-size: 36px;
+            line-height: 58px;
+            padding-left: 15px;
+        }
+    }
+}
+
+.menu__list {
+    display: flex;
+    &__item {
+        font-size: 15px;
+        color: $main-color;
+        @extend %rubic-500;
+    }
+}
+
+.menu__list__item+.menu__list__item {
+    margin-right: 40px;
+}
+
+.menu__list__item:first-child {
+    margin-right: 40px;
+}
+
+.user__nav {
+    display: flex;
+}
+
+@import 'media';
