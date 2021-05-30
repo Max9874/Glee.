@@ -2,12 +2,6 @@
 @import 'fonts';
 @import 'reset';
 @import 'global';
-.container {
-    max-width: 1800px;
-    padding: 15px;
-    margin: 0 auto;
-}
-
 .header {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -86,6 +80,97 @@
         border-radius: 50%;
         background-color: #a3bbc8;
     }
+}
+
+.footer {
+    &__logo {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+        &__main {
+            width: 53px;
+            height: 39px;
+        }
+        &__title {
+            color: $main-color;
+            font-size: 36px;
+            line-height: 58px;
+            padding-left: 15px;
+        }
+    }
+}
+
+.footer__top {
+    display: flex;
+    align-items: baseline;
+    &__item__contact {
+        width: 200px;
+        margin-right: 100px;
+    }
+    &__item__services {
+        width: 130px;
+        margin-right: 150px;
+    }
+    &__item__account {
+        width: 100px;
+        margin-right: 190px;
+    }
+    &__item__forma {
+        max-width: 270px;
+    }
+    &__item__title {
+        text-transform: uppercase;
+        @extend %dmsans-700;
+        font-size: 16px;
+        line-height: 21px;
+        color: #1f2044;
+        margin-bottom: 28px;
+    }
+    &__item__list__item {
+        @extend %rubic-400;
+        font-size: 14px;
+        line-height: 32px;
+        color: $main-footer-color;
+    }
+    &__item__list__item a {
+        @extend %rubic-400;
+        font-size: 14px;
+        line-height: 32px;
+        color: $main-footer-color;
+    }
+    &__item__text {
+        @extend %rubic-400;
+        font-size: 14px;
+        line-height: 24px;
+        color: $main-footer-color;
+    }
+}
+
+.footer__top__form__input {
+    background-color: #fde9d4;
+    max-width: 140px;
+    min-width: 100px;
+    border: none;
+    padding-top: 14px;
+    padding-left: 16px;
+    padding-bottom: 13px;
+    padding-right: 15px;
+}
+
+.footer__top__form__input::placeholder {
+    color: #183b58;
+    @extend %dmsans-400;
+    font-size: 12px;
+}
+
+.footer__top__form__button {
+    padding: 14px 15px;
+    background-color: #94afbd;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    @extend %dmsans-400;
+    font-size: 14px;
 }
 
 @import 'media';
