@@ -1,13 +1,15 @@
+//watch(['app/js/**/*.js', '!app/js.main.min.js'], script)
 @import 'vars';
 @import 'fonts';
 @import 'reset';
 @import 'global';
+@import 'libs';
 .header {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 40px;
+    margin-bottom: 35px;
     &__inner {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
     }
     &__logo {
@@ -32,6 +34,10 @@
         font-size: 15px;
         color: $main-color;
         @extend %rubic-500;
+        cursor: pointer;
+        &:hover {
+            color: #000;
+        }
     }
 }
 
@@ -171,6 +177,37 @@
     color: #fff;
     @extend %dmsans-400;
     font-size: 14px;
+}
+
+.slider__top {
+    &__inner {
+        background-color: #fcd7b6;
+    }
+    &__title {
+        text-transform: uppercase;
+        color: $title-color;
+        @extend %rubic-500;
+        line-height: 72px;
+        font-size: 70px;
+        max-width: 420px;
+    }
+    &__link {
+        display: inline-block;
+        color: #fff;
+        @extend %rubic-500;
+        font-size: 15px;
+        line-height: 12px;
+        background-color: #a3bbc8;
+        padding: 24px 100px 24px 21px;
+    }
+}
+
+.slider___top__text {
+    line-height: 30px;
+    font-size: 18px;
+    @extend %rubic-400;
+    color: $main-color;
+    max-width: 370px;
 }
 
 @import 'media';

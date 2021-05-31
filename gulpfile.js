@@ -72,7 +72,7 @@ function clean() {
 
 function watching() {
     watch(['app/scss/**/*.scss'])
-    watch(['app/js/**/*.js', '!app/js.main.min.js'], script)
+
     watch(['app/*.html']).on('change', browserSync.reload)
 }
 

@@ -19,6 +19,7 @@
         "jquery": "^3.6.0"
     },
     "dependencies": {
-        "del": "^6.0.0"
+        "del": "^6.0.0",
+        "slick-carousel": "^1.8.1"
     }
 }
