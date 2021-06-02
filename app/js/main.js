@@ -1,9 +1,12 @@
 $(function() {
+
     $('.slider__top__inner').slick({
-        arrows: false,
         dots: true,
+        arrows: false,
         autoplay: true,
         autoplaySpeed: 5000
+
     });
+
 
 });

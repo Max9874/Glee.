@@ -190,6 +190,7 @@
         line-height: 72px;
         font-size: 70px;
         max-width: 420px;
+        margin-bottom: 38px;
     }
     &__link {
         display: inline-block;
@@ -198,7 +199,48 @@
         font-size: 15px;
         line-height: 12px;
         background-color: #a3bbc8;
-        padding: 24px 100px 24px 21px;
+        padding: 24px 21px 24px 21px;
+        &__div {
+            display: flex;
+            justify-content: center;
+        }
+        &__div img {
+            padding-left: 60px;
+        }
+    }
+    &__item {
+        display: flex !important;
+        margin-top: 220px;
+    }
+    &__content {
+        margin-left: 300px;
+        margin-right: 110px;
+    }
+    &__img {
+        margin-top: -100px;
+        margin-bottom: 10px;
+    }
+}
+
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    background-color: transperent;
+    li {
+        margin-bottom: 40px;
+        opacity: 30%;
+        margin-right: 12px !important;
+        margin-left: 12px !important;
+        button {
+            cursor: pointer;
+            border-radius: 50%;
+            border: none;
+            background-color: #fff;
+            padding: 9px 14px;
+        }
+    }
+    li.slick-active {
+        opacity: 100%;
     }
 }
 
@@ -208,6 +250,61 @@
     @extend %rubic-400;
     color: $main-color;
     max-width: 370px;
+    margin-bottom: 45px;
+}
+
+.slider__bottom {
+    background-color: #fef7f0;
+    display: flex;
+    justify-content: space-around;
+    &__item {
+        margin-bottom: 45px;
+        margin-top: 40px;
+        position: relative;
+    }
+    &__title {
+        @extend %dmsans-700;
+        line-height: 40px;
+        font-size: 18px;
+        color: #414141;
+        &__24::before {
+            content: '';
+            background-image: url('../images/24hour.png');
+            position: absolute;
+            width: 55px;
+            height: 55px;
+            background-repeat: no-repeat;
+            left: -75px;
+            top: 15px;
+        }
+        &__card::before {
+            content: '';
+            background-image: url('../images/credit-card.png');
+            position: absolute;
+            width: 55px;
+            height: 55px;
+            background-repeat: no-repeat;
+            left: -75px;
+            top: 15px;
+        }
+        &__truck::before {
+            content: '';
+            background-image: url('../images/delivery-truck.png');
+            position: absolute;
+            width: 50px;
+            height: 45px;
+            background-repeat: no-repeat;
+            left: -75px;
+            top: 15px;
+        }
+    }
+    &__text {
+        line-height: 30px;
+        color: #585858;
+        font-size: 16px;
+        @extend %dmsans-400;
+        max-width: 225px;
+    }
 }
 
 @import 'media';
