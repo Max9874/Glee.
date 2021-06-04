@@ -8,5 +8,7 @@ $(function() {
 
     });
 
+    var mixit = mixitup('.categories__content')
+
 
 });
