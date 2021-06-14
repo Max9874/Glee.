@@ -9,6 +9,7 @@ $(function() {
     });
 
     var mixit = mixitup('.categories__content')
+    var mixit1 = mixitup('.design__items')
 
 
 });
