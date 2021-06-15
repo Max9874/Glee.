@@ -487,4 +487,95 @@
     }
 }
 
+.clientt {
+    &__bottom {
+        margin-bottom: 330px;
+        &__image {
+            top: 4717px;
+        }
+    }
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-bottom: 50px;
+    }
+    &__title {
+        @extend %dmsans-700;
+        font-size: 36px;
+        color: $subtitle-color;
+    }
+    &__link {
+        color: $subtitle-color;
+        @extend %dmsans-700;
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+    }
+    &__items {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 100;
+    }
+    &__item {
+        width: 370px;
+        margin: 0 30px;
+        position: relative;
+        max-height: 420px;
+        box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+        background-color: #fff;
+    }
+    &__item__image {}
+    &__item__link {
+        position: absolute;
+        padding: 6px 25px;
+        color: #fff;
+        font-size: 14px;
+        line-height: 20px;
+        @extend %dmsans-700;
+        background-color: #a3bbc8;
+        border-radius: 18px;
+        bottom: 158px;
+        left: 25px;
+    }
+    &__item__text {
+        margin-top: 40px;
+        @extend %dmsans-500;
+        color: #000;
+        font-size: 18px;
+        margin-bottom: 20px;
+        padding-bottom: 15px;
+        border-bottom: 2px solid #f5f5f5;
+        max-width: 300px;
+        margin: 40px auto 0px;
+        background-color: #fff;
+        height: 70px;
+    }
+    &__item__date {
+        display: flex;
+        font-size: 12px;
+        color: #222933;
+        line-height: 30px;
+        margin-left: 35px;
+        background-color: #fff;
+        margin-top: 8px;
+        margin-bottom: 6px;
+    }
+    &__item__subtitle {
+        margin-right: 35px;
+    }
+    &__bottom__image {
+        position: absolute;
+        z-index: -1;
+    }
+}
+
+.sss {
+    padding-right: 20px;
+}
+
 @import 'media';

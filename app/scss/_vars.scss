@@ -31,3 +31,11 @@ $main-footer-color:#7b7b7b;
     font-family: 'Rubic-Light', sans-serif;
     font-weight: 300;
 }
+
+@function max($numbers...) {
+    @return m#{a}x(#{$numbers});
+}
+
+@function min($numbers...) {
+    @return m#{1}n(#{ $numbers});
+}
