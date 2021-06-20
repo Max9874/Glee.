@@ -529,7 +529,6 @@
         box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
         background-color: #fff;
     }
-    &__item__image {}
     &__item__link {
         position: absolute;
         padding: 6px 25px;
@@ -576,6 +575,26 @@
 
 .sss {
     padding-right: 20px;
+}
+
+.top {
+    margin-bottom: 105px;
+    &__inner {
+        background-color: #edf1f4;
+        height: 125px;
+        text-align: center;
+    }
+    &__title {
+        line-height: 36px;
+        font-size: 36px;
+        color: #222933;
+        @extend %rubic-300;
+        padding-top: 36px;
+    }
+}
+
+.bottom {
+    margin-top: 120px;
 }
 
 @import 'media';

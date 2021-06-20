@@ -52,3 +52,33 @@ body {
     max-width: 1170px;
     margin: 0 auto;
 }
+
+.breadcrumbs {
+    margin-top: 10px;
+    &__list {
+        display: flex;
+        justify-content: center;
+    }
+    &__item {
+        margin-right: 20px;
+        position: relative;
+        &::after {
+            content: '/';
+            position: absolute;
+            right: -12px;
+            top: 2px;
+            color: #9ea4a9;
+        }
+        &:last-child {
+            &::after {
+                display: none;
+            }
+            margin-right: 0;
+        }
+    }
+    &__link {
+        &__text {
+            color: #9ea4a9;
+        }
+    }
+}
